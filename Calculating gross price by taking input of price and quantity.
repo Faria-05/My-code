@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    float price,net_salary,net_price;
+    int n;
+    printf("Enter the price:");
+    scanf("%f",&price );
+    printf("Enter the number of computer:");
+    scanf("%d",&n );
+    net_price=(1.00*n)*price;
+    net_salary=1500.00+(200.00*n )+(net_price*2/100);
+    printf("Gross Salary=%f ",net_salary );
+    return 0;
+}
