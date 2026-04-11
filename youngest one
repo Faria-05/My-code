@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int A,F,J;
+    printf("Enter the age of Arif,Fahmid,Joy:");
+    scanf("%d %d %d",&A,&F,&J);
+    if(A<F&&A<J)
+    {
+        printf("Arif is youngest");
+    }
+    if(F<A&&F<J)
+    {
+        printf("Fahmid is youngest");
+    }
+    else
+    {
+        printf("Joy is youngest");
+    }
+    return 0;
+}
