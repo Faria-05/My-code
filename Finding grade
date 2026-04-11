@@ -1,0 +1,47 @@
+#include<stdio.h>
+int main()
+{
+int phy,chem,bio,math,com;
+float percentage;
+printf("Enter the marks:(phy,chem,bio,math,com)");
+scanf("%d%d%d%d%d",&phy,&chem,&bio,&math,&com);
+percentage=(phy+chem+bio+math+com)*100.0/500;
+
+
+    if (phy > 100 || phy < 0 ||chem > 100 || chem < 0 || bio > 100 || bio < 0 ||math > 100 || math < 0 ||com > 100 || com < 0)
+    {
+        printf("Input the correct mark");
+        return 0;   
+    } 
+if( percentage>=90)
+
+{
+printf("Grade A ");
+}
+else if( percentage>=80)
+{
+printf("Grade B ");
+}
+else if( percentage>=70)
+{
+printf("Grade C ");
+}
+
+else if( percentage>=60)
+{
+printf("Grade D ");
+}
+
+else if( percentage>=40)
+{
+printf("Grade E ");
+}
+
+else if( percentage<40)
+{
+printf("Grade F ");
+}
+
+return 0;
+
+}
