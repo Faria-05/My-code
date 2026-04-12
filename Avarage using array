@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int a[50],i,sum=0;
+    float ava;
+    printf("Enter the marks:");
+    for(i=0;i<50;i++)
+    {
+        
+        scanf("%d",&a[i]);
+        sum+=a[i];
+    }
+    ava=(float)sum/5;
+    printf("%f",ava);
+    return 0;
+}
