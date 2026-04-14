@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    char s[500];
+    int i,vowel=0;
+    printf("enter a string");
+    scanf("%[^\n]",s);
+    for(i=0;s[i]!='\0';i++)
+    {
+        if(s[i]=='A'||s[i]=='E'||s[i]=='I'||s[i]=='O'||s[i]=='U'||s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u');
+        {
+            vowel++;
+        }
+        
+    }
+    printf("Vowel is %d",vowel);
+    return 0;
+}
