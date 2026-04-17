@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+   char a[200];
+   int length=0,i;
+    printf("Enter the string:");
+    fgets(a,sizeof(a),stdin);
+    a[strcspn(a,"\n")]='\0';
+    for(i=0;a[i]!='\0';i++)
+    {
+        length++;
+    }
+    printf("Length is:%d",length);
+    return 0;
+}
